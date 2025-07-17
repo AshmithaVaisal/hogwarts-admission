@@ -18,7 +18,7 @@ const Confirmation = () => {
 
   return (
     <div
-      className="flex items-center justify-center min-h-screen bg-cover bg-center bg-gray-900 p-4"
+      className="flex items-center justify-center min-h-screen bg-cover bg-center bg-gray-900 p-4 sm:bg-[length:100%_100%] md:bg-cover"
       style={{ backgroundImage: "url('/images/outside.jpg')" }}
     >
       <div

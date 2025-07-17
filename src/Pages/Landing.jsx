@@ -38,7 +38,7 @@ const Landing = () => {
 
   return (
     <div
-      className="flex items-center justify-center p-4 min-h-screen bg-cover bg-center"
+      className="flex items-center justify-center p-4 min-h-screen bg-cover bg-center sm:bg-[length:100%_100%] md:bg-cover"
       style={{ backgroundImage: "url('/images/Hogwarts.jpg')" }}
     >
       <div

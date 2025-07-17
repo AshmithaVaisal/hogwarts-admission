@@ -68,7 +68,7 @@ const AdmissionForm = () => {
 
   return (
     <div
-      className="flex items-center justify-center p-4 min-h-screen bg-cover bg-center"
+      className="min-h-screen bg-no-repeat bg-center bg-cover sm:bg-[length:100%_100%] md:bg-cover p-4"
       style={{ backgroundImage: "url('/images/harry.jpg')" }}
     >
       <div
@@ -84,7 +84,6 @@ const AdmissionForm = () => {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
-        
           <div className="grid md:grid-cols-2 gap-4 md:gap-6">
             <div>
               <label className="block text-[#c3b8b8] mb-1 md:mb-2 font-medium">
@@ -194,10 +193,10 @@ const AdmissionForm = () => {
 
           {/* Magical Skills */}
           <div>
-            <label className="block text-[#c3b8b8] mb-1 md:mb-4 font-medium">
+            <label className="block text-[#c3b8b8] mb-1 md:mb-4 sm:mb-6 font-medium">
               Magical Skills (Select all that apply)
             </label>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 italic">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2 italic">
               {[
                 "Herbology",
                 "Potions",
@@ -230,10 +229,10 @@ const AdmissionForm = () => {
 
           {/* Pet Selection */}
           <div>
-            <label className="block text-[#c3b8b8] mb-1 md:mb-2 font-medium italic">
+            <label className="block text-[#c3b8b8] mb-1 md:mb-2 font-medium">
               Magical Companion
             </label>
-            <div className="flex flex-wrap gap-3 md:gap-4">
+            <div className="flex flex-wrap gap-3 md:gap-4 pt-2">
               {["Owl", "Cat", "Toad", "Rat", "None"].map((pet) => (
                 <label key={pet} className="flex items-center italic">
                   <input
