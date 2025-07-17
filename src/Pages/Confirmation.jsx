@@ -31,7 +31,10 @@ const Confirmation = () => {
       >
         {/* X Close Button */}
         <button
-          onClick={() => (window.location.href = "/")}
+          onClick={() => {
+            window.open("/", "_self");
+            window.close(); // fallback if open fails
+          }}
           className="absolute top-4 right-4 text-[#eeba30] text-xl font-bold hover:text-red-500 transition"
           title="Close"
         >
