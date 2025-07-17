@@ -68,8 +68,12 @@ const AdmissionForm = () => {
 
   return (
     <div
-      className="min-h-screen bg-no-repeat bg-center bg-cover sm:bg-[length:100%_100%] md:bg-cover p-4"
-      style={{ backgroundImage: "url('/images/harry.jpg')" }}
+      className="flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover sm:bg-[length:100%_100%] md:bg-cover p-4"
+      style={{
+        backgroundImage: "url('/images/harry.jpg')",
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+      }}
     >
       <div
         ref={admissionCardRef}

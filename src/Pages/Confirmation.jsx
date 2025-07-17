@@ -19,7 +19,11 @@ const Confirmation = () => {
   return (
     <div
       className="flex items-center justify-center min-h-screen bg-cover bg-center bg-gray-900 p-4 sm:bg-[length:100%_100%] md:bg-cover"
-      style={{ backgroundImage: "url('/images/outside.jpg')" }}
+      style={{
+        backgroundImage: "url('/images/outside.jpg')",
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+      }}
     >
       <div
         id="acceptance-card"
@@ -27,7 +31,7 @@ const Confirmation = () => {
       >
         {/* X Close Button */}
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/", { replace: true })}
           className="absolute top-4 right-4 text-[#eeba30] text-xl font-bold hover:text-red-500 transition"
           title="Close"
         >
