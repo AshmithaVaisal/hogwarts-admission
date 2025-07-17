@@ -15,7 +15,7 @@ const CommonCard = ({ name }) => {
   }, []);
 
   const admissionHandleClick = () => {
-    navigate("/admission");
+    navigate("/admission", { replace: true });
   };
 
   return (
