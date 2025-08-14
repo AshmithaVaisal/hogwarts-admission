@@ -60,7 +60,8 @@ const AdmissionForm = () => {
     localStorage.removeItem(LOCAL_STORAGE_KEY);
 
     setTimeout(() => {
-      navigate("/confirmation", {
+      //  navigate("/admission", { });
+      navigate("/confirmation", { replace: true,
         state: { studentName: formattedName, formData },
       });
     }, 500);

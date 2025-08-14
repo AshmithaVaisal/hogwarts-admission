@@ -16,6 +16,10 @@ const Confirmation = () => {
     }
   }, []);
 
+  const handleClose = () => {
+    window.location.replace("/");
+  };
+
   return (
     <div
       className="flex items-center justify-center min-h-screen bg-cover bg-center bg-gray-900 p-4 sm:bg-[length:100%_100%] md:bg-cover"
@@ -31,7 +35,7 @@ const Confirmation = () => {
       >
         {/* X Close Button */}
         <button
-          onClick={() => window.location.replace("/")}
+          onClick={handleClose}
           className="absolute top-4 right-4 text-[#eeba30] text-xl font-bold hover:text-red-500 transition"
           title="Close"
         >
